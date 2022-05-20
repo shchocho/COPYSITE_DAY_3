@@ -27,6 +27,43 @@
       li{
         position: relative;
         float : left;
+        &:hover{
+          .sub{
+
+            visibility:visible;
+            top: 100%;
+            opacity: 1;
+            li{
+              
+              &:hover{
+                a{
+                  ul.sub-option{
+
+                    right: -50px;
+                    li{
+                      display: block;
+                    }
+                    a{
+
+                    }
+                  }
+                }
+              }
+              a{
+                line-height: 10px;
+                transition: 1s;
+              }
+              ul.sub-option{
+                li{
+                  display: none;
+                }
+
+              }
+            }
+
+          }
+
+        }
         a{
           text-align: center;
           font-size: 20px;
@@ -36,17 +73,6 @@
           display: block;
           transition: 1s;
           padding: 45px 51px 27px;
-          &:hover ~ .sub {
-            visibility:visible;
-            top: 100%;
-            opacity: 1;
-            li{
-              a{
-                line-height: 10px;
-                transition: 1s;
-              }
-            }
-          }
           & ~ .sub {
             position: absolute;
             border: 1px solid black;
@@ -74,6 +100,7 @@
           }
         }
       }
+
     }
   }
   a.btn{
@@ -213,20 +240,20 @@
       top: 104px;
       right: 50px;
       display: inline-block;
-      &:hover{
+      #close-btn:hover{
         transform: rotate(360deg);
       }
       #close-btn{
         position: relative;
         display: inline-block;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         transition: 2s;
         transform: rotate(0);
         span{
           position: absolute;
           height: 1.6px;
-          width: 100px;
+          width: 50px;
           background: #fff;
           top: 50%;
           cursor: pointer;
@@ -329,4 +356,28 @@
       }
     }
   }
+}
+
+@keyframes rotateCir {
+  from{
+    transform: rotate(0);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+
+}
+@keyframes popicon {
+  from{
+    transform: translateY(-30px);
+  }
+  to{
+   transform: translateY(-0px);
+  }
+}
+@media screen and (max-width:1280px ) {
+
+
+
 }

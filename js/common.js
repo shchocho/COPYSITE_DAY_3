@@ -62,6 +62,9 @@ $(function() {
     }
   });
 
+  $(".mainbanner p").animate({top: "60%", opacity:1},1000);
+  $(".mainbanner h3").animate({top:"45%" ,opacity:1},1000);
+
 
   $(window).scroll(function() {
     let hTop = $("#header").offset().top;

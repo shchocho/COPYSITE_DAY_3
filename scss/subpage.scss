@@ -1,5 +1,118 @@
-.mainbanner{
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover
-}
+$mainBannerColor: white;
+
+
+  .mainbanner{
+    position: relative;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:$mainBannerColor;
+    text-align: center;
+    h3{
+      position: absolute;
+      font-size: 50px;
+      line-height: 1;
+      font-weight: 700;
+      opacity: 0.3;
+      top: calc(60% - 51px);
+      left:0; right:0;
+    }
+    p{
+      position: absolute;
+      font-size: 20px;
+      line-height: 1.7;
+      font-weight: 400;
+      opacity: 0.3;
+      top: calc(60% + 24px);
+      left:0; right:0;
+    }
+
+  }
+  #lnb{
+    margin-bottom: 100px;
+    ul{
+      display: flex;
+      justify-content: space-around;
+      li{
+
+        a{
+          font-size: 18px;
+          height: 71px;
+          line-height: 71px;
+        }
+      }
+    }
+  }
+  .container{
+    min-height: 650px;
+    text-align: center;
+    h3{
+      font-size: 50px;
+      margin-bottom: 88px;
+    }
+    .sub-option-wrap{
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 70px;
+      .sub-option{
+          li{
+            height: 58px;
+            display: inline-block;
+            float: left;
+            a{
+              position: relative;
+              font-size: 20px;
+              line-height: 1;
+              color: #666;
+              padding: 0 40px;
+              transition: .3s;
+              padding-bottom: 29px;
+            }
+          }
+      }
+    }
+    section#introduce{
+      background-color: #f9f9f9;
+      background-image: url(../img/introduce/introduceimg01.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      .content-box{
+        .txt-container{
+          text-align: center;
+          h5{
+            font-size: 18px;
+            line-height: 1;
+            color: #b5985a;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+          }
+          h3{
+            font-size: 40px;
+            line-height: 1.45;
+            color: #333;
+            font-weight: 500;
+            letter-spacing: -0.03em;
+          }
+        }
+        .box-container{
+          display: flex;
+          width: 100%;
+          border-radius: 1px solid #b5985a;
+          .box-item{
+            padding-top: 50px;
+            background: white;
+            width: 20%;
+            text-align: center;
+            margin: 0 10px;
+            border: 3px solid transparent;
+            box-sizing: border-box;
+            transition: 0.5s;
+            &:hover{
+              border: 3px solid #b5985a;
+            }
+          }
+        }
+      }
+    }
+  }
